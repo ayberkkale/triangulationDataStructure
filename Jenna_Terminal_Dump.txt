@@ -1,0 +1,122 @@
+
+*--------------------------Test 1 Read & Add Vertex and Print to A File--------------------------*
+
+New vertex added ID, x, y, z: 1467 140 333 1004
+Total Vertices: 1468
+New vertex added ID, x, y, z: 1468 142 331 1004
+Total Vertices: 1469
+New vertex added ID, x, y, z: 1469 143 337 1004
+Total Vertices: 1470
+
+*--------------------------Test 2 Read & Add Triangle and Print to A File--------------------------*
+
+
+New Triangle added ID, VertexID1, VertexID2, VertexID3, Attributes: 2620 1400 100 300 , 1 1 1 10 132756 0 1 0 0 0 0.921752 2335 0 0 1 0 0 
+Total Triangles: 2621
+Don't try to add triangle with multiple occurence of same vertex
+You cannot use the same vertex multiple times
+
+*--------------------------Test 3 Triangulation Read Change Vertex or Triangle Content & Print to A File--------------------------*
+
+2 72.5 0 994
+2 3 32 1005 :Newly Set Values
+
+41 42 43 54 0 1 1 1200 28410 0 1 0 1 0 0.98072 71 1 0 1 0 1
+41 44 49 51 0 1 1 1200 33561 0 1 0 1 0 0.98072 71 1 0 1 0 1 :Newly set values
+
+The Triangulation Print Location: ./triangulation#2_output_test3.tri
+
+*--------------------------Test 4 Triangulation isDelaunay by checking in Circumcircle--------------------------* 
+
+
+ *Triangulation #1 
+
+Triangle ID 983 has the inserceting vertex ID inside its circumcircle: 309
+Triangle ID 1175 has the inserceting vertex ID inside its circumcircle: 446
+Triangle ID 1712 has the inserceting vertex ID inside its circumcircle: 448
+Triangle ID 1904 has the inserceting vertex ID inside its circumcircle: 514
+Triangulation is not delaunay
+
+Time to check each vertices in circumcircle of a triangle for the triangulation has took: 0.520545s
+
+Boolean for Checking Delaunay triangulation # 1: 0
+
+ Triangulation #2 
+
+Triangle ID 1 has the inserceting vertex ID inside its circumcircle: 58
+Triangle ID 80 has the inserceting vertex ID inside its circumcircle: 74
+Triangulation is not delaunay
+
+Time to check each vertices in circumcircle of a triangle for the triangulation has took: 0.001037s
+
+Boolean for Checking Delaunay triangulation # 2: 0
+
+ Triangulation #3 
+
+Triangulation is delaunay
+
+Time to check each vertices in circumcircle of a triangle for the triangulation has took: 0.002261s
+
+Boolean for Checking Delaunay triangulation # 3: 1
+
+ Triangulation #4 
+
+Triangle ID 5 has the inserceting vertex ID inside its circumcircle: 21
+Triangle ID 65 has the inserceting vertex ID inside its circumcircle: 24
+Triangle ID 89 has the inserceting vertex ID inside its circumcircle: 26
+Triangle ID 88 has the inserceting vertex ID inside its circumcircle: 27
+Triangle ID 65 has the inserceting vertex ID inside its circumcircle: 60
+Triangle ID 89 has the inserceting vertex ID inside its circumcircle: 61
+Triangulation is not delaunay
+
+Time to check each vertices in circumcircle of a triangle for the triangulation has took: 0.00083s
+
+Boolean for Checking Delaunay triangulation # 4: 0
+
+*--------------------------Test 5 Integrate By Two Methods--------------------------*
+
+The Function is '1' which used with a triangulation with one triangle. Integration should be the area of that triangle.
+
+Area of Triangle with these three vertices (0 -147.011 -2.06649 ,1 -145.37 -1.86448,2 -146.241 -3.3838) :1.15863
+Integral Result by Constant Value Approximation: 1.15863
+Integral Result by Linear Interpolation Approximation: 1.15863
+
+*--------------------------Test 6 Given a Point x,y Find which triangle contains it--------------------------*
+
+Point (181 , -17.5) is in triangle number: 2619
+The Return Triangle ID of the Function: 2619
+Point (-82 , -5.85) is in triangle number: 157
+The Return Triangle ID of the Function: 157
+
+*--------------------------Test 7 Find Circumcircle of a Triangle or Coordinate --------------------------*
+
+circumCentre x is: 167.859, circumCentre y is: -0.873545, circumRadiusR is: 2.26659
+
+The return from the function of a triangleID Ox Oy Or:100 167.859 -0.873545 2.26659
+
+circumCentre x is: 350, circumCentre y is: 250, circumRadiusR is: 254.951
+
+*--------------------------Test 8 Find  which Triangle's circumcircle has a vertex (only intersecting not owned ones)--------------------------*
+
+Triangle ID 983 has the inserceting vertex ID inside its circumcircle: 309
+
+*--------------------------Test 9 Find  which Triangle  has specific vertex --------------------------*
+
+Triangle ID 156 has the vertex ID: 1253
+Triangle ID 427 has the vertex ID: 1253
+Triangle ID 717 has the vertex ID: 1253
+Triangle ID 834 has the vertex ID: 1253
+Triangle ID 1706 has the vertex ID: 1253
+
+Return values of function: 156 427 717 834 1706 
+
+*--------------------------Test 10 Vertex Attribute & Triangle Non Attribute Test --------------------------*
+
+New vertex added ID, x, y, z, attributes: 4 140 333 1004 , 16 18 13 
+Total Vertices: 5
+Change the vertex attribute function(setVertexAttributeVectorElement) 4 140 333 1004 16 319 13 :Newly set values
+New Triangle added ID, VertexID1, VertexID2, VertexID3: 1 4 2 3
+Total Triangles: 2
+Don't try to add triangle with multiple occurence of same vertex
+You cannot use the same vertex multiple times
+
